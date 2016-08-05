@@ -229,7 +229,7 @@
 	    this._commandWindow.setHandler('save',      this.commandSave.bind(this));
 	    this._commandWindow.setHandler('gameEnd',   this.commandGameEnd.bind(this));
 	    this._commandWindow.setHandler('cancel',    this.popScene.bind(this));
-	    this._commandWindow.x = (Graphics.boxWidth - (this._commandWindow.width / 2) - this._commandWindow.width)
+	    this._commandWindow.x = ((Graphics.boxWidth / 2) - (this._commandWindow.width / 2))
 	    this._commandWindow.y = -48;
 	    this._commandWindow.opacity = 0;
 	    this.addChild(this._commandWindow);
